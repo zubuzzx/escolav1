@@ -35,15 +35,9 @@ session_start();
             exit();
  
  
- 
- 
- 
         // }catch(PDOException $e) {
-        //     header('Location: ../view/cad_docente_view.php?erro=5');
- 
- 
- 
- 
+            // header('Location: ../view/cad_docente_view.php?erro=6');
+  
         // }
  
  
