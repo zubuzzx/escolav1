@@ -30,7 +30,7 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.php">Home</a>
+                        <a class="nav-link active" aria-current="page" href="cad_docente_view.php">Docente</a>
                       </li>
                      
                       <li class="nav-item dropdown">
@@ -38,13 +38,13 @@
                           Cadastrar
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="cad_aluno.html">Aluno</a></li>
-                          <li><a class="dropdown-item" href="cad_docente.html">Docente</a></li>
-                          <li><a class="dropdown-item" href="cad_turma.html">Turma</a></li> 
-                          <li><a class="dropdown-item" href="cad_curso.html">Curso</a></li>                        
+                          <li><a class="dropdown-item" href="cad_aluno_view.php">Aluno</a></li>
+                          <li><a class="dropdown-item" href="cad_docente_view.php">Docente</a></li>
+                          <li><a class="dropdown-item" href="cad_turma_view.php">Turma</a></li> 
+                          <li><a class="dropdown-item" href="cad_curso_view.php">Curso</a></li>                        
 
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="cad_matricula.html">Matricula</a></li>
+                          <li><a class="dropdown-item" href="cad_matricula_view.php">Matricula</a></li>
                         </ul>
                       </li>
                      

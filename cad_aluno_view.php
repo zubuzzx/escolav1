@@ -30,7 +30,7 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.php">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                       </li>
                      
                       <li class="nav-item dropdown">
@@ -40,11 +40,11 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <li><a class="dropdown-item" href="cad_aluno_view.php">Aluno</a></li>
                           <li><a class="dropdown-item" href="cad_docente_view.php">Docente</a></li>
-                          <li><a class="dropdown-item" href="cad_turma_view_php">Turma</a></li> 
+                          <li><a class="dropdown-item" href="cad_turma_view.php">Turma</a></li> 
                           <li><a class="dropdown-item" href="cad_curso_view.php">Curso</a></li>                        
 
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="cad_matricula_view.html">Matricula</a></li>
+                          <li><a class="dropdown-item" href="cad_matricula_view.php">Matricula</a></li>
                         </ul>
                       </li>
                      
@@ -81,7 +81,7 @@
             <div class="col">
               <div class="mb-3">
                 <label for="dataNasc" class="form-label">Data de Nascimento</label>
-                <input type="text" class="form-control" id="dataNasc" name="dataNasc">
+                <input type="date" class="form-control" id="dataNasc" name="dataNasc">
               </div>
             </div>
           </div>
@@ -95,14 +95,20 @@
             </div>
           </div>
      
-          <!-- <div class="row">
+          <div class="row">
             <div class="col">
               <div class="mb-3">
-                <label for="telefoneDocente" class="form-label">Telefone</label>
-                <input type="text" class="form-control" id="telefoneDocente">
+                <label for="telefonePrinc" class="form-label">Telefone principal</label>
+                <input type="number" class="form-control" id="telefonePrinc" name="telefonePrinc">
               </div>
             </div>
-          </div> -->
+            <div class="col">
+              <div class="mb-3">
+                <label for="telefoneSec" class="form-label">Telefone secundário</label>
+                <input type="number" class="form-control" id="telefoneSec" name="telefoneSec">
+              </div>
+            </div>
+          </div>
      
           <div class="row">
             <div class="col">

@@ -10,25 +10,28 @@ class Aluno{
     public $cpf;
     public $datanasc;
     public $email;
+
     public $cep;
     public $rua;
     public $bairro;
     public $cidade;
     public $estado;
     public $pais;
+    public $tele1;
+    public $tele2;
 
  
 
     // Ações (super poderes da classe):
     public function Inserir(){
-        $sql = "INSERT INTO aluno (nome_aluno, cpf_aluno, data_nasc_aluno, email_aluno, cep_aluno, rua_aluno, bairro_aluno, cidade_aluno, estado_aluno, pais_aluno) VALUES(?,?,?,?,?,?,?,?,?,?)";
+        $sql = "CALL cad_aluno(?,?,?,?,?,?,?,?,?,?,?,?)";
         // Trabalhar com o banco:
         // Conectando:
         $banco = Banco::conectar();
         // Transformar a string em comando sql:
         $comando = $banco->prepare($sql);
         // Executar e subsitituir os coringas (?):
-        $comando->execute(array($this->nome, $this->cpf, $this->datanasc, $this->email, $this->cep, $this->rua, $this->bairro, $this->cidade, $this->estado, $this->pais));
+        $comando->execute(array($this->nome, $this->cpf, $this->datanasc, $this->email, $this->cep, $this->rua, $this->bairro, $this->cidade, $this->estado, $this->pais, $this->$tele1, $this->$tele2));
         // Desconectar do banco:
         Banco::desconectar();
     }
@@ -65,7 +68,7 @@ class Aluno{
         $sql = "UPDATE docente SET nome_docente = ?, email_docente = ?, telefone_docente = ? WHERE id_docente = ?";
         $banco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $comando = $banco->prepare($sql);
-        $comando->execute(array($this->nome, $this->email, $this->telefone, $this->id));
+        $comando->execute(array($this->nome, $this->email, $this->id));
         Banco::desconectar();
         // Retornar quantidade de linhas alteradas:
         return $comando->rowCount();

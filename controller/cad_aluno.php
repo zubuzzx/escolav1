@@ -24,6 +24,8 @@ session_start();
         $c->cidade = $_POST['cidadeAluno'];
         $c->estado = $_POST['estadoAluno'];
         $c->pais = $_POST['paisAluno'];
+        $c->tele1 = $_POST['telefonePrinc'];
+        $c->tele2 = $_POST['telefoneSec'];
        
  
  
